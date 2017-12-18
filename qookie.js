@@ -2,9 +2,27 @@
 	qookie
 	Copyright(c) 2017 George Duff
 	MIT Licensed
-*/
 
-/*
+	Include as a standard node lib
+	const qookie = require('./qookie');
+
+
+	//** Set a cookie
+	// Arry of objects [name, value] min
+	qookie.setCookie(response, [
+		{
+			name: 	'uuid',
+			value: 	'',
+			expires: 0
+		},{
+			name:	'customerID',
+			value:	'',
+			expires: 0
+		}
+	]);
+
+
+
 	getSingleCookie
 	@description - Retrieves a single cookie value.
 	@param {request} request - Node.js request object.
